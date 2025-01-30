@@ -1,0 +1,73 @@
+# Site
+name: "Best practices"
+title: "Best practices in microbiome analysis"
+description: "Analysis of Metabarcoding and Metagenomics datasets"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: /best-practices
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  at:
+    name: Andrea Telatin
+    display_name: Andrea Telatin
+    gravatar: f4ae403ab821b6c55bed3a7efd4c6aa1
+    web: https://telatin.github.io/
+    twitter: https://twitter.com/telatin
+    description: "Head of Bioinformatics at the Quadram Institute Bioscience, Norwich."
+  jt:
+    name: Judit Talas
+    display_name: Judit Talas
+    gravatar: a811fc7b3f22425d9502e270dc6c9d9c
+    twitter: https://x.com/talasjudit
+    description: "Bioinformatics Data Scientist at the Quadram Institute Bioscience, Norwich."
+  ap:
+    name: Alise Ponsero
+    display_name: Alise Ponsero
+    gravatar: 6fab599229767b48afe1b33cff175018
+    description: "Bioinformatic Data Scientist at the Quadram Institute Bioscience, Norwich."
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jemoji
+  - jekyll-gist 
+  - jekyll-youtube
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
